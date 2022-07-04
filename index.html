@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mirzzie.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">mirzzie.</td>
+                <td id="navigation">
+                    <a href="#bio">about me.</a>
+                    <a href="#pro">projects.</a>
+                    <a href="#work">achievements.</a>
+                    <a href="#contact">contact.</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h3>Hi,</h3>
+                <h1>I'm MIRZAD ISMAIL</h1>
+                <h3>BCA student | Tech enthusiast | likes cats</h3>
+                <a href="https://docs.google.com/document/d/16BLlhh4yS6BAqKGB-lrBjByc-lW6QQRN5lIkIqoG-BE/edit?usp=sharing"<button class="btn_one">Resume</button><br></a>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.linkedin.com/in/mirzad-ismail-7870441ba/"><i class="fab fa-linkedin"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/Mirzzie?t=GOLTlMM6Qy1MG-ozxAYhtQ&s=09"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/itsmirzzie/"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://t.me/MiRZZiE"><i class="fab fa-telegram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://github.com/Mirzzie"><i class="fab fa-github"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            ahmm , am a passionate guy about tech , coding etc
+        </p>
+        <p>
+
+        </p>
+    </div>
+    <div id="achive">
+        <h1>achivements</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="/images/certi.jfif">
+            <img onclick="magnify($(this).attr('src'))" src="/images/ver.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/cpp.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/FRT.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/ok.jpg">
+        </div>
+        <div class="edu">
+            <h1>Education</h1>
+            <dl>
+            <dt><h3><span id="edd" class="course"><i class="fi fi-sr-graduation-cap">&nbsp</i></i>Bachelor of Computer Application (BCA)</span></h3></dt>
+            <dd>May 2020 - Present</dd>
+            <dd>Mahathma Gandhi University</dd>
+            <dd>Sem 1 with 82%</dd>
+            </dl>
+            <dl>
+            <dt><h3><span id="edd" class="course"><i class="fi fi-sr-graduation-cap">&nbsp</i>Class XII - Computer Science</span></h3></dt>
+            <dd>June 2018 - March 2020</dd>
+            <dd>Vocational Higher Secondary School , Karalam</dd>
+            <dd>Passed out with 78.85%</dd>
+        </dl>
+            <dl>
+            <dt><h3><span id="edd" class="course"><i class="fi fi-sr-graduation-cap">&nbsp</i>Class X</span></h3></dt>
+            <dd>June 2017- March 2018</dd>
+            <dd>National Higher Secondary School, Irinjalakuda</dd>
+            <dd>Passed out with 80.0%</dd>
+            </dl>
+        </div>
+
+        <div class="pro">
+            <h1>Projects</h1>
+            <dl>
+               <dt><h3><span id="pro" class="type"><i class="fi fi-rr-bulb">&nbsp</i>Tour Routing system — Microsoft Azure</span></3></dt>
+               <dd>An optimization tool for finding the optimal and feasible routes to our destination.</dd>
+               <dd><a href="https://github.com/ShivamKumar2002/tour-routing-system"><button id="az">link</button><br></a></dd>
+            </dl>
+
+            <dl>
+               <dt><h3><span id="pro" class="type"><i class="fi fi-rr-bulb">&nbsp</i>Custom Rom Development — Compiled AOSP roms</span></h3></dt>
+               <dd>A contribution to an Android device community by compiling AOSP (Android Open Source Project) custom roms</dd>
+            </dl>
+
+            <dl>
+                <dt><h3><span id="pro" class="type"><i class="fi fi-rr-bulb">&nbsp</i>Arduino Project— IR Sensor Car</span></h3></dt>
+                <dd>An Arduino project for controlling toy car with infrared sensor,</dd>
+                <dd>programming language  used was C++ with arduino IDE</dd>
+            </dl>
+
+            <dl>
+                <dt><h3><span id="pro" class="type"><i class="fi fi-rr-bulb">&nbsp</i>Arduino Project—  Automatic Street Light</span></h3></dt>
+                <dd>A project for controlling street lights using Arduino & LDR (Light Dependent Resistor)</dd>
+                <dd>so that it goes on/off based on day and night.</dd>
+            </dl>
+
+            <dl>
+                <dt><h3><span id="pro" class="type"><i class="fi fi-rr-bulb">&nbsp</i>Robotics Internship Arduino Project— Data Transfer from Arduino to ROS using ROS serial communication</span></h3></dt>
+                <dd>An Arduino project for passing messages from Arduino microcontroller to ROS(Robot Operating System) using ROS serial communication,</dd>
+                <dd>programming language  used was C++ with the Arduino IDE platform.</dd>
+            </dl>
+
+        </div>
+
+
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +91 9207282703</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; mirswad.chikku@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Irinjalakuda,<br>
+                                        Thrissur,<br>
+                                        Kerala,<br>
+                                        India
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" href="https://www.linkedin.com/in/mirzad-ismail-7870441ba/"><i class="fab fa-linkedin"></i></a>
+                                        <a class="social" href="https://twitter.com/Mirzzie?t=GOLTlMM6Qy1MG-ozxAYhtQ&s=09"><i class="fab fa-twitter"></i></a>
+                                        <a class="social" href="https://www.instagram.com/itsmirzzie/"><i class="fab fa-instagram"></i></a>
+                                        <a class="social" href="https://t.me/MiRZZiE"><i class="fab fa-telegram"></i></a>
+                                        <a class="social" href="https://github.com/Mirzzie"><i class="fab fa-github"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        made on earth by a human <br> <a href="">mirzzie.</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
