@@ -211,14 +211,14 @@ header table {
     background-repeat: no-repeat;
 }
 
-#achive {
+#achieve {
     width: 92vw;
     color: #fff;
     padding: 6vh 4vw;
     font-weight: bold;
 }
 
-#achive h1 {
+#achieve h1 {
     padding: 5px 0px;
     border-bottom: 4px solid rgb(255, 255, 255);
     width: 6%;
@@ -440,7 +440,7 @@ button:focus {
     #contact form textarea {
         width: 90%;
     }
-    #achive h1 {
+    #achieve h1 {
         width: 19%;
     }
     #bio h1 {
