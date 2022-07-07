@@ -1,3 +1,4 @@
+
 var width = $(window).width();
 window.onscroll = function() {
     if ((width >= 1000)) {
